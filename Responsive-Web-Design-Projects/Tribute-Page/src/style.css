@@ -1,0 +1,48 @@
+div {
+  text-align: center;
+}
+
+#main { /* id */
+  background-color: lightgray;
+} 
+
+img {
+  border-left: 20px solid white;
+  border-right: 20px solid white;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  
+  background-color: white;
+  }
+#img-div {
+  display: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 30%;
+
+}
+
+.img-caption {
+}
+
+.bold {
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.tribute-info {
+  position: relative;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: left;
+}
+
+#tribute-link {
+}
+
+
+
