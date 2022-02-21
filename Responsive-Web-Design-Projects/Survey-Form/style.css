@@ -1,0 +1,87 @@
+body {
+    display: block;
+  
+      background-image: url(https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/vintage-concrete.png);
+    background-attachment: fixed;
+    background-position: center;
+  
+  }
+  
+  #sticky-note {
+    display: block;
+    float: left;
+    max-width: 20%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-image: url(
+  https://www.onlygfx.com/wp-content/uploads/2020/07/blank-post-it-note-1.png
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px 10px;
+  
+  }
+  
+  #main {
+    display: block;
+    margin: auto;
+    max-width: 40%;
+    height: auto;
+  
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  
+  #center-form {
+    display: block;
+    background-image: url(https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/School-Clipart/Clipboard_PNG_Clipart.png?m=1594625589);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 100px 25px 50px 25px;
+  
+  }
+  
+  
+  input[type=text], input[type=number], input[type=email], input[type=submit], select {
+    display: block;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 0px auto 25px auto;
+  }
+  
+  textarea {
+    display: block;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 0px auto 25px auto;
+    resize: vertical;
+  }
+  
+  
+  label, input[type=radio], input[type=checkbox] {
+   margin-left: 13%;
+  }
+  
+  p {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  
+  .radio-label, .checkbox-label {
+    margin-left: 0%;
+  }
+  
+  #submit {
+    background: black;
+    color: white;
+  }
+  
+  
