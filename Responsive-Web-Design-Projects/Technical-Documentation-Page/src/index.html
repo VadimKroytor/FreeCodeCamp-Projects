@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main id="main-doc">
+
+        <nav id="navbar">
+            <div class="container">
+                <header>
+                    <h1>IBM Java 8 SDK Documentation</h1>
+                </header>
+                <ul id="nav-links">
+                    <div id="first-half-links">
+                        <a href="#Introduction" class="nav-link">
+                            <li>Introduction</li>
+                        </a>
+
+                        <a href="#What's_new" class="nav-link">
+                            <li>What's New</li>
+                        </a>
+
+                        <a href="#About_IBM's_SDK" class="nav-link">
+                            <li>About IBM's SDK</li>
+                        </a>
+                    </div>
+
+                    <div id="second-half-links">
+                        <a href="#Installing_the_SDK" class="nav-link">
+                            <li>Installing the SDK</li>
+                        </a>
+
+                        <a href="#Developing_Java_Apps" class="nav-link">
+                            <li>Developing Java Apps</li>
+                        </a>
+
+                        <a href="#Running_Java_Apps" class="nav-link">
+                            <li>Running Java Apps</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main-doc-content">
+            <section id="Introduction" class="main-section">
+                <header>
+                    <h1>Introduction</h1>
+                </header>
+                <p>The IBM® implementation of the Java™ platform provides development tools and an application
+                    runtime
+                    environment.
+                    <br><br>
+                    The Java programming language is a high-level, object-oriented language. When written,
+                    a Java program is compiled into bytecode. The bytecode is interpreted at run time by a
+                    platform-specific Java component. This component acts
+                    as a translator between the language and the underlying operating system and hardware. This
+                    staged
+                    approach to compiling and interpreting Java applications means that application code can be
+                    easily
+                    ported across hardware platforms and
+                    operating systems.
+
+                    <br><br>
+                    The IBM implementation of the Java platform is based upon the Java Technology
+                    developed by Oracle Corporation. IBM supply an installable package, the Software Developers Kit
+                    (SDK).
+                </p>
+
+
+            </section>
+
+            <section id="What's_new" class="main-section">
+                <header>
+                    <h1>What's new</h1>
+                </header>
+
+                <p>
+                    IBM® SDK, Java™ Technology Edition, Version 8 is a new release that is fully compatible with Oracle
+                    Java SE version 8 class libraries.
+                    <br><br>
+                    The IBM implementation of Java contains IBM technology and extensions.
+                    <br><br>
+                    Monthly refreshes of the SDK for certain platforms are made available on the Java SDK support pages.
+                    These refreshes can contain new features and serviceability improvements, plus fixes from Oracle and
+                    IBM. Only levels that contain significant changes are documented in this user guide.
+                </p>
+            </section>
+
+            <section id="About_IBM's_SDK" class="main-section">
+                <header>
+                    <h1>About IBM's SDK</h1>
+                </header>
+
+                <p>
+                    The SDK contains development tools and a Java™ runtime environment. The SDK is an installable Java
+                    package, which contains the Java Application Programming Interface (API). The Java API is a large
+                    collection of ready-made classes, grouped into libraries,
+                    that help you develop and deploy applications. The SDK also includes:
+                </p>
+                <ul>
+                    <li>A Java compiler.</li>
+                    <li>A Java Virtual Machine (JVM or VM).</li>
+                    <li>Tools for monitoring, debugging, and documenting applications.</li>
+                    <li>Tools for developing user interfaces, or GUIs.</li>
+                    <li>Integration libraries for applications that must access databases and remote objects.</li>
+                </ul>
+
+            </section>
+
+            <section id="Installing_the_SDK" class="main-section">
+                <header>
+                    <h1> Installing the SDK</h1>
+                </header>
+
+                <p>
+                    On AIX® systems, you can install the SDK from an InstallAnywhere package, or from an installp
+                    package.
+                    If you are using one of the supported non-UTF8 CJK locales, you must install one of the following
+                    file sets:
+                </p>
+
+                <ul>
+                    <li>X11.fnt.ucs.ttf (for ja_JP or Ja_JP)</li>
+                    <li>X11.fnt.ucs.ttf_CN (for zh_CN or Zh_CN)</li>
+                    <li>X11.fnt.ucs.ttf_KR (for ko_KR)</li>
+                    <li>X11.fnt.ucs.ttf_TW (for zh_TW or Zh_TW)</li>
+                </ul>
+                <br>
+                <p> When using the zh_TW.IBM-eucTW locale on 64-bit AIX 6.1, you might get a result that uses ISO-8859-1
+                    instead of IBM-eucTW, in response to the following command:</p>
+
+                <code>LANG=zh_TW locale charmap</code>
+                <br>
+                <h3> Linux </h3>
+
+                <p>You install the SDK from an InstallAnywhere package. The InstallAnywhere packages for Linux® are
+                    either archive packages or installable packages. Use the archive packages when you want to install
+                    the product without any configuration. Use the installable packages when you want to install the
+                    product with associated configuration, such as the setting of environment variables. </p>
+                <br>
+                <h3> Windows</h3>
+                <p>The SDK is available only as part of an IBM product. For more information about obtaining, installing
+                    and performing initial configuration of IBM® SDK, Java™ Technology Edition in such a product on
+                    Windows, please contact your IBM support representative. You can, however, configure the SDK by
+                    using environment variables, command-line options, and properties files. </p>
+                <br>
+                <h3> Verifying the Installation (AIX only)</h3>
+                <p>
+                    When you complete your SDK installation on an AIX® system by using an installp package, you can
+                    verify that the installation was successful by removing any environment settings and running the
+                    <strong>java -version </strong>command. To ensure that the verification process behaves
+                    consistently, enter the following commands:
+                </p>
+                <code>unset LIBPATH
+                    <br>
+                    unset CLASSPATH
+                    <br>
+                    unset JAVA_COMPILER
+                    <br>
+                    export PATH=install_dir/jre/bin:install_dir/bin:$PATH</code>
+                <br>
+                <p>After running the <strong>java -version</strong> command, you should see the following output on AIX
+                    from service
+                    refresh 5 fix pack 5 (where dates, times and specific build numbers might be different):</p>
+                <code>
+                    java version "1.8.0_151"
+                    <br>
+                    Java(TM) SE Runtime Environment (build 8.0.5.5 - pap6480sr5fp5-20171109_02(SR5 FP5))
+                    <br>
+                    IBM J9 VM (build 2.9, JRE 1.8.0 AIX ppc64-64 Compressed References 20171102_369060 (JIT enabled, AOT enabled)
+                    <br>
+                    OpenJ9 - 7ade437
+                    <br>
+                    OMR - 1b656cb
+                    <br>
+                    IBM - 59c3d96)
+                    <br>
+                    JCL - 20171109_01 based on Oracle jdk8u151-b12</code>
+            </section>
+
+            <section id="Developing_Java_Apps" class="main-section">
+                <header>
+                    <h1>Developing Java Apps</h1>
+                </header>
+                <p>
+                    The SDK contains many tools and libraries required for Java™ software development. See IBM Software
+                    Developers Kit (SDK) for details of the tools available.
+                    <br><br>
+                    To debug Java programs, you can use the Java Debugger (JDB) application or other debuggers that
+                    communicate by using the Java Platform Debugger Architecture (JPDA) that is provided by the SDK for
+                    the operating system.
+
+                </p>
+
+
+            </section>
+
+            <section id="Running_Java_Apps" class="main-section">
+                <header>
+                    <h1>Running Java Apps</h1>
+                </header>
+                <p>Java™ applications can be started using the java launcher or through JNI. Settings are passed to a
+                    Java application using command-line arguments, environment variables, and properties files.</p>
+                <br>
+
+                <h3>Usage of Java Virtual Machine</h3>
+                <p>The JVM searches for the initial class (and other classes that are used) in three sets of locations:
+                    the bootstrap class path, the installed extensions, and the user class path. The arguments that you
+                    specify after the class name or .jar file name are passed to the main function.
+                    The java and javaw commands have the following syntax: </p>
+                <code>java [options] &ltclass&gt [arguments]
+                    <br>
+                    java [options] -jar &ltfile.jar&gt [arguments]
+                    <br>
+                    javaw [options] &ltclass&gt [arguments]
+                    <br>
+                    javaw [options] -jar &ltfile.jar&gt [arguments]</code>
+                <br>
+
+                <h3>Obtaining Version information</h3>
+                <p>
+                    You obtain the IBM® build and version number for your Java™ installation by using the -version or
+                    -fullversion options. You can also obtain version information for all jar files on the class path by
+                    using the -Xjarversion option. To see the current java version being used on your machine, input the
+                    following into your OS command line terminal:
+                </p>
+                <code>java -version</code>
+                <br>
+                <p>To obtain only the build information for the runtime environment, type the following command:</p>
+                <code>java -fullversion</code>
+                
+            </section>
+
+            <section>
+                <header>
+                    <h1>Reference Material</h1>
+                    <p>The content from this developed front-end website was taken directly from
+
+                        <a href="https://www.ibm.com/docs/en/sdk-java-technology/8?topic=sdk-user-guide"> this clickable
+                            IBM link!
+                        </a>
+                    </p>
+                </header>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

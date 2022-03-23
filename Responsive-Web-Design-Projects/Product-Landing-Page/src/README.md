@@ -1,6 +1,6 @@
 # Product Landing Page
 
 A Website created on CodePen.io. Original URL: 
-https://codepen.io/vadimkroytor/pen/yLPjoKx?editors=1100
+https://codepen.io/vadimkroytor/full/yLPjoKx
 
 

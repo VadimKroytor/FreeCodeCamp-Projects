@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*background-image: url("https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/doodles.png");
+    */
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+#main-doc {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+#navbar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(240, 250, 250);
+    border-right: solid;
+
+}
+
+#navbar header:nth-of-type(1) {
+    border-bottom: solid;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#navbar .container {
+    height: 40%;
+    flex-direction: column;
+    display: flex;
+
+}
+
+#nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#nav-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+    border-color: black;
+}
+
+section ul {
+    margin-left: 25px;
+}
+
+#main-doc-content li {
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+#main-doc-content {
+    margin: 0px 50px 0px 300px;
+}
+
+#main-doc-content header:nth-of-type(1) {
+    margin-top: 25px;
+}
+
+section {
+    padding-bottom: 35px;
+}
+
+section p, section h3 {
+    margin-left: 15px;
+}
+
+
+
+section code {
+    margin-left: 15px;
+    display: flex;
+    line-height: 40px;
+    font-family: 'Courier New', monospace;
+    background: black;
+    color: white;
+    padding: 10px 10px;
+}
+
+@media (max-width: 700px){
+    #main-doc {
+        flex-direction: column;
+
+    }
+
+    #navbar {
+        position: absolute;
+        width: 100%;
+        height:fit-content;
+    }
+
+    #navbar .container {
+        flex-direction: column;
+    }
+
+    #nav-links {
+        flex-direction: column;
+    }
+
+
+
+    #first-half-links a:nth-of-type(n), #second-half-links a:nth-of-type(n) {
+        
+        width: 33%;
+        border-bottom: none;
+        text-align: center;
+    }
+
+    #first-half-links a:nth-of-type(2n+1), #second-half-links a:nth-of-type(2n+1) {
+        text-align: center;
+        border-bottom: none;
+        border-left: solid;
+        border-right: solid;
+        border-color: black;
+        
+    }
+
+    #first-half-links {
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid;
+    }
+
+    #second-half-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: solid;
+    }
+
+
+    #main-doc-content {
+        margin: 200px 25px 0px 25px;
+    }
+
+
+
+}
